@@ -7,7 +7,7 @@ module.exports = async function ({ getNamedAccounts, deployments }) {
   const { deployer } = await getNamedAccounts();
   const chainId = network.config.chainId;
   const args = [];
-  const props = await deploy("PROPS", {
+  const props = await deploy("USDT", {
     from: deployer,
     args: args,
     log: true,
